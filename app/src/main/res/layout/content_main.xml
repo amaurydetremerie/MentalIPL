@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/nbCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nbCalc"
+        app:layout_constraintBottom_toTopOf="@+id/newGame"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chechAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/checkAdd"
+        app:layout_constraintStart_toStartOf="@+id/nbCalc"
+        app:layout_constraintTop_toBottomOf="@+id/nbCalc" />
+
+    <CheckBox
+        android:id="@+id/chechSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkSub"
+        app:layout_constraintStart_toStartOf="@+id/chechAdd"
+        app:layout_constraintTop_toBottomOf="@+id/chechAdd" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/mail"
+        app:layout_constraintStart_toStartOf="@+id/chechSub"
+        app:layout_constraintTop_toBottomOf="@+id/chechSub" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="onClickNewGame"
+        android:text="@string/newGame"
+        app:layout_constraintStart_toStartOf="@+id/mail"
+        app:layout_constraintTop_toBottomOf="@+id/mail" />
+
+    <EditText
+        android:id="@+id/nbEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintNb"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@id/nbCalc"
+        app:layout_constraintStart_toEndOf="@+id/nbCalc"
+        app:layout_constraintTop_toTopOf="@+id/nbCalc" />
+
+    <EditText
+        android:id="@+id/mailEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintMail"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/mail"
+        app:layout_constraintStart_toEndOf="@+id/mail"
+        app:layout_constraintTop_toTopOf="@+id/mail" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/newGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MentalIPL</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="nbCalc">Nombre de calculs :</string>
+    <string name="checkAdd">Addition</string>
+    <string name="checkSub">Soustraction</string>
+    <string name="mail">Email de l\'utilisateur</string>
+    <string name="newGame">Nouvelle partie</string>
+    <string name="hintNb">0</string>
+    <string name="hintMail">example@example.com</string>
+
+    <string name="title">Calcule :</string>
+
+</resources>
